@@ -1,0 +1,192 @@
+var you;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  you = createCapture(VIDEO);
+	you.size(100,100);
+	textSize(18);
+		s = "A picture paints a thousand words. But can a thousand letters paint a picture? Pretty good!";
+		fill(255);
+		text(s, 300, 200, 210, 240); 	
+	
+		s = "Let's paint. Let us paint. Lettuce paint. I'm in pain."
+		fill(255);
+		text(s, 300, 325, 210, 240);
+	
+		s = "So, let's get something straight..."
+		fill(66, 205, 221);
+		text(s, 600, 200, 210, 240); 
+	
+		s = "This is a world of sound. You have entered it. You are here, I am here, we are singular. I am universal."
+		fill(66, 205, 221);
+		text(s, 600, 270, 210, 240); 
+	
+		s = "I'll let you explore and learn the terrain for yourself. But go ahead and press: "
+		fill(219, 62, 177);
+		text(s, 900, 200, 210, 240); 
+	
+		s = " 'd', 'f', 'g', 'h', 'j', 'k', 'c', 'v', 'b'  and click your mouse to clear the screen."
+		fill(255, 199, 0);
+		text(s, 900, 310, 250, 260); 
+	
+		s = "... and there are some easter eggs... play around! - or should I say press... around?"
+		fill(219, 62, 177);
+		text(s, 900, 400, 250, 260); 
+	
+		s = "There are a couple of beats you can play to, and they're under keys 'a' and 'z' and you can press the space bar to stop them."
+		fill(66, 205, 221);
+		text(s, 600, 400, 250, 260); 
+	
+	bing4 = loadSound("bing4.wav");
+	bingThree = loadSound("bingbingbing.wav");
+	bingTwo = loadSound("bingbing.wav");
+	bing1 = loadSound("bing1.wav");
+	bong1 = loadSound("bong1.wav");
+	bonglow = loadSound("bonglow.wav");
+	bonghigh = loadSound("bonghigh.wav");
+	binghigh = loadSound("binghigh.wav");
+	bingoct1 = loadSound("bingoct1.wav");
+	bingoct2 = loadSound("bingoctneg1.wav");
+	bing3 = loadSound("bing3.wav");
+	loveit = loadSound("love_it1.wav");
+	fuckjerry = loadSound("fuckjerry.wav");
+	beat1 = loadSound("Wu-Tang_Clan_-_Wu-Tang_7th_Chamber_Part_2_INSTRUMENTAL.mp3");
+	beat2 = loadSound("Nintendo_Mii_Channel_Trap_Remix_All_That_Swag_Instrumental.mp3");
+	wow = loadSound("wow.wav");
+	lebron = loadSound("lebron.wav");
+	money = loadSound("money.wav");
+	asian = loadSound("asian.wav");
+	gratata = loadSound("gratata.wav");
+	ok = loadSound("ok.wav");
+	lisa = loadSound("lisa.wav");
+}
+
+function keyTyped() {
+  if(key == 'f'){
+		tint (255, random(0), random(150));
+		image(you, random(width), random(height));
+    bing4.play();
+	}
+	else if(key == 'g'){
+		tint (random(255), random(50), random(400));
+		image(you, random(width), random(height));
+		bingTwo.play();
+	}
+	else if(key == 'w'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		wow.play();
+	}
+	else if(key == 'l'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		loveit.play();
+	}
+	else if(key == 'h'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		bingThree.play();
+	}
+	else if(key == 'j'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		bing1.play();
+	}
+	else if(key == 'v'){
+		tint (random(255), random(255), random(255));
+		filter('INVERT');
+		image(you, random(width), random(height));
+		bong1.play();
+	}
+	else if(key == 'k'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		binghigh.play();
+	}
+	else if(key == 'd'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		bing3.play();
+	}
+	else if(key == 'e'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		fuckjerry.play();
+	}
+	else if(key == 'u'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		bingoct1.play();
+	}
+	else if(key == 'n'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		bingoct2.play();
+	}
+	else if(key == 'b'){
+		tint (random(255), random(255), random(255));
+		filter('INVERT');
+		image(you, random(width), random(height));
+		bonglow.play();
+	}
+	else if(key == 'c'){
+		tint (random(255), random(255), random(255));
+    filter('INVERT');
+		image(you, random(width), random(height));
+		bonghigh.play();
+	}
+	else if(key == 'z'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		beat1.play();
+	}
+	else if(key == 'a'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		beat2.play();
+	}
+	else if(key == 'a'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		beat2.play();
+	}
+	else if(key == 'r'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		lebron.play();
+	}
+	else if(key == 'm'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		money.play();
+	} 
+	else if(key == 't'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		asian.play();
+	} 
+	else if(key == 'q'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		gratata.play();
+	} 
+	else if(key == 'o'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		ok.play();
+	} 
+	else if(key == 'y'){
+		tint (random(255), random(255), random(255));
+		image(you, random(width), random(height));
+		lisa.play();
+	} 
+	else if(key == ' '){
+		beat1.stop();
+		beat2.stop();
+	} 
+		
+}
+
+function mousePressed() {
+	clear();
+}
